@@ -1,6 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "homepage": "https://junyanchen123.github.io",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -18,11 +19,13 @@
     "react-leaflet": "^4.2.0",
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.7.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass": "^1.57.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
