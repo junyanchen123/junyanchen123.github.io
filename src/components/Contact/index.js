@@ -96,6 +96,7 @@ const Contact = () => {
             </MapContainer>
             </div>
           </div>
+          <Loader type="pacman" />
         </>
       )
     }
